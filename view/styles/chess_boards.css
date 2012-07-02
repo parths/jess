@@ -1,0 +1,102 @@
+.cb_bnw_black_sq
+{
+	width: 40;
+	height: 40;
+	
+	position: absolute;
+	
+	background-color: #000000;
+	color: #ffffff;
+	
+	text-align: center;
+	
+	border-color: #aaaaaa;
+	border-width: 1px;
+	border-style: solid;
+	
+}
+
+.cb_bnw_white_sq
+{
+	width: 40;
+	height: 40;
+	
+	position: absolute;
+	
+	background-color: #ffffff;
+	
+	text-align: center;
+	
+	border-color: #aaaaaa;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.cb_tnmt01_black_sq
+{
+	width: 40;
+	height: 40;
+	
+	position: absolute;
+	
+	background-color: #44bb44;
+	color: #ffffff;
+	
+	text-align: center;
+	
+	border-color: #aaaaaa;
+	border-width: 1px;
+	border-style: solid;
+
+}
+
+.cb_tnmt01_white_sq
+{
+	width: 40;
+	height: 40;
+	
+	position: absolute;
+	
+	background-color: #ffffff;
+	
+	text-align: center;
+	
+	border-color: #aaaaaa;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.cb_wooden_black_sq
+{
+	width: 40;
+	height: 40;
+	
+	position: absolute;
+	
+	background-color: #44bb44;
+	background-image: url('../../resources/boards/cb_wooden/black_sq.gif');
+	color: #ffffff;
+	
+	text-align: center;
+	
+	border-color: #aaaaaa;
+	border-width: 0px;
+	border-style: solid;
+}
+
+.cb_wooden_white_sq
+{
+	width: 40;
+	height: 40;
+	
+	position: absolute;
+	
+	background-color: #ffffff;
+	background-image: url('../../resources/boards/cb_wooden/white_sq.gif');
+	
+	text-align: center;
+	
+	border-color: #aaaaaa;
+	border-width: 0px;
+	border-style: solid;
+}

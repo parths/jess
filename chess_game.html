@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Play Jess</title>
+		<link href = "view/styles/chess_boards.css" rel = "stylesheet" type = "text/css" />
+		<script type = "text/javascript" src = "utils/pLog.js"></script>
+		<script type = "text/javascript" src = "model/board.js"></script>
+		<script type = "text/javascript" src = "model/chess_rules.js"></script>
+		<script type = "text/javascript" src = "model/position_evaluation.js"></script>
+		<script type = "text/javascript" src = "model/move_generation.js"></script>
+		<script type = "text/javascript" src = "model/move_generation_ai.js"></script>
+		<script type = "text/javascript" src = "view/board_view.js"></script>
+		<script type = "text/javascript" src = "controller/controller.js"></script>
+		<script type = "text/javascript" >
+			var controller = null;
+			function init(brdDesign, AIcolour)
+			{
+				controller = new pController(brdDesign);
+				controller.Init();
+				controller.setAIPlayer(AIcolour);
+			}
+		</script>
+		<style>
+		body {
+		  min-width:500px;
+		  min-height:500px;
+		  overflow-x:hidden;
+		}
+		</style>
+	</head>
+	<body onload = "init();" width = "500" height = "500">
+		<div id = "chess_board" style="zIndex:2;">
+			<div>
+			</div>
+		</div>
+		<textarea id = "pDbgBox" width="200" height="50" rows="5" cols="100" style="position:absolute;top:320px;zIndex:4;"></textarea>
+		<br />
+		<select onchange="javascript:init(value, 'none');" style="position:absolute;top:410px;zIndex:4;">
+			<option value="cb_tnmt01">Tournament 01</option>
+			<option value="cb_wooden">Wooden</option>
+			<option value="cb_bnw">Black n White</option>
+		</select>
+		<select onchange="javascript:init(null, value);" style="position:absolute;top:410px;zIndex:4;">
+			<option value="none">No AI</option>
+			<option value="black">AI Plays Black</option>
+		</select>
+	</body>
+</html>
